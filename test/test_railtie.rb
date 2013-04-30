@@ -162,4 +162,9 @@ class TestRailtie < TestBoot
     assert_equal false, env.context_class.digest_assets
     assert_equal nil, env.context_class.config.asset_host
   end
+
+  def test_enabled
+    app.initialize!
+    assert app.config.assets.enabled
+  end
 end

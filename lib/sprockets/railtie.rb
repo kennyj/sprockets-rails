@@ -47,6 +47,7 @@ module Sprockets
     end
 
     config.assets = OrderedOptions.new
+    config.assets.enabled    = true
     config.assets._blocks    = []
     config.assets.paths      = []
     config.assets.prefix     = "/assets"
